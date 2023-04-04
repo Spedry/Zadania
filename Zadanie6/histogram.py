@@ -39,21 +39,18 @@ def print_graf(img1, img2, ramp):
     plt.show()
 
 
-
-
 if __name__ == '__main__':
     img1 = np.zeros((200, 200), np.uint8)
 
-    #print_pic()
+    # print_pic()
 
-    cv.rectangle(img1, (0, 100), (200, 200), 255, -1)   #white
-    cv.rectangle(img1, (0, 50), (150, 150), 200, -1)    #light
-    cv.rectangle(img1, (0, 25), (125, 75), 100, -1)    #
-    cv.rectangle(img1, (0, 50), (50, 200), 35, -1)      #dark
+    cv.rectangle(img1, (0, 100), (200, 200), 255, -1)  # white
+    cv.rectangle(img1, (0, 50), (150, 150), 200, -1)  # light
+    cv.rectangle(img1, (0, 25), (125, 75), 100, -1)  #
+    cv.rectangle(img1, (0, 50), (50, 200), 35, -1)  # dark
 
-    #print_pic()
+    # print_pic()
 
     img2 = np.flip(img1)
 
     print_graf(img1, img2, cv.imread("obr/rampa.png"))
-
